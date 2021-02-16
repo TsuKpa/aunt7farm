@@ -1,0 +1,40 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": "./",
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"declaration": false,
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"lib": [
+			"es2018"
+		],
+		"module": "commonjs",
+		"target": "es2018",
+		"paths": {
+			"@app/*": [
+				"src/app/*"
+			],
+			"@layout/*": [
+				"src/app/common/layout/*"
+			],
+			"@utils/*": [
+				"src/app/common/utils/*"
+			],
+			"@pages": [
+				"src/app/pages/*"
+			]
+		}
+	},
+	"files": ["src/environments/environment.prod.ts"],
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}

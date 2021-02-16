@@ -1,12 +1,14 @@
 {
     "tabWidth": 4,
-    "useTabs": true,
+    "useTabs": false,
     "semi": true,
-    "singleQuote": false,
+    "singleQuote": true,
     "quoteProps": "as-needed",
     "trailingComma": "none",
     "bracketSpacing": true,
+	"no-unexpected-multiline": "error",
     "arrowParens": "always",
+	"endOfLine": "auto",
     "overrides": [
         {
             "files": "*.component.html",
