@@ -10,10 +10,10 @@
     "e2e": "ng e2e"
   },
   "husky": {
-	"hooks": {
-		"pre-commit": "prettier --write . && git add -A .",
-		"pre-push": "npm run lint && git branch | grep \"*\" | egrep -v \"^* master$\""
-	}
+    "hooks": {
+      "pre-commit": "prettier --write . && git add -A .",
+      "pre-push": "npm run lint && git branch | grep \"*\" | egrep -v \"^* master$\""
+    }
   },
   "private": true,
   "dependencies": {
