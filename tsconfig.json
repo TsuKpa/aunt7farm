@@ -10,7 +10,8 @@
 		"moduleResolution": "node",
 		"importHelpers": true,
 		"lib": [
-			"es2018"
+			"es2018",
+			"dom"
 		],
 		"module": "commonjs",
 		"target": "es2018",
@@ -28,6 +29,10 @@
 				"src/app/pages/*"
 			]
 		}
+	},
+	"angularCompilerOptions": {
+		"strictTemplates": true,
+		"fullTemplateTypeCheck": false,
 	},
 	"files": ["src/environments/environment.prod.ts"],
 	"include": [

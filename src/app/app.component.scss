@@ -1,1 +1,34 @@
 @import "./styles/style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	@apply m-0 p-0 box-border;
+	font-family: 'Varela Round', sans-serif;
+}
+
+html {
+	font-size: 12px;
+}
+
+section {
+	@apply p-24;
+}
+
+header {
+
+	.logo {
+		width: 6rem;
+		height: 6rem;
+	}
+
+	ul {
+		li {
+			@apply list-none;
+
+			a {
+				@apply inline-block ml-10 font-normal no-underline;
+				color: #292524;
+			}
+		}
+	}
+}

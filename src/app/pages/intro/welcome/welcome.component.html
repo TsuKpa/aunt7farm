@@ -1,1 +1,29 @@
-<p>welcome works!</p>
+<div>
+	<div class="circle-path" [ngStyle]="{'background-color': pathColor}">
+	</div>
+	<div class="content">
+		<div class="text-box">
+			<h2 class="mb-3">
+				Bạn cần trái cây đảm bảo chất lượng?<br>Hãy đến <span>Trang Trại Cô Bảy</span>
+			</h2>
+			<p class="mb-3">
+				Nơi chuyên bán sỉ và lẻ các loại trái cây tươi ngon, chất lượng, đảm bảo nguồn gốc xuất xứ.
+				Ngoài ra còn có ốc bưu đen và các loại hoa kiểng.
+			</p>
+			<button class="btn bg-green-600 hover:bg-green-700 focus:ring-green-600">Tìm hiểu thêm</button>
+		</div>
+		<div class="img-box">
+			<img [src]="imageSource" alt="image">
+		</div>
+	</div>
+	<ul class="thumb">
+		<li (click)="changeImage('shell')"><img src="../../../../assets/shell.svg" alt="shell icon"></li>
+		<li (click)="changeImage('fruit')"><img src="../../../../assets/fruits.svg" alt="fruits icon"></li>
+		<li (click)="changeImage('flower')"><img src="../../../../assets/flower.svg" alt="flower icon"></li>
+	</ul>
+	<ul class="sci">
+		<li><a href=""><i class="fa fa-facebook"></i></a></li>
+		<li><a href=""><i class="fa fa-twitter"></i></a></li>
+		<li><a href=""><i class="fa fa-instagram"></i></a></li>
+	</ul>
+</div>

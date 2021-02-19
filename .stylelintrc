@@ -7,7 +7,8 @@
         "tailwind"
       ]
     }],
+	"no-descending-specificity": null,
     "block-no-empty": null,
-    "unit-whitelist": ["em", "rem", "px"]
+    "unit-whitelist": ["em", "rem", "px", "%", "vh", "vw", "s"]
   }
 }
