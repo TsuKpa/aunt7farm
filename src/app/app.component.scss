@@ -6,18 +6,15 @@
 	font-family: 'Varela Round', sans-serif;
 }
 
-html {
-	font-size: 12px;
-}
-
 section {
-	@apply p-24;
+	@apply p-24 flex justify-between items-center bg-white relative w-full min-h-screen;
 }
 
 header {
+	@apply w-full flex justify-between items-center absolute top-0 left-0 py-3 pl-24 pr-10;
 
 	.logo {
-		width: 6rem;
+		width: 4rem;
 		height: 6rem;
 	}
 
@@ -28,6 +25,10 @@ header {
 			a {
 				@apply inline-block ml-10 font-normal no-underline;
 				color: #292524;
+			}
+
+			a:hover {
+				@apply underline;
 			}
 		}
 	}
