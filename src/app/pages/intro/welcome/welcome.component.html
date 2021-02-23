@@ -1,4 +1,9 @@
-<div>
+<ul class="sci">
+	<li><a href=""><i class="fa fa-facebook"></i></a></li>
+	<li><a href=""><i class="fa fa-twitter"></i></a></li>
+	<li><a href=""><img class="zalo" src="../../../../assets/info1/zalo.svg" alt="flower icon"></a></li>
+</ul>
+<div class="info-1">
 	<div class="circle-path" [ngStyle]="{'background-color': pathColor}">
 	</div>
 	<div class="content">
@@ -10,21 +15,45 @@
 				Nơi chuyên bán sỉ và lẻ các loại trái cây tươi ngon, chất lượng, đảm bảo nguồn gốc xuất xứ.
 				Ngoài ra còn có ốc bưu đen và các loại hoa kiểng.
 			</p>
-			<button class="btn bg-green-600 hover:bg-green-700 focus:ring-green-600">Tìm hiểu thêm</button>
-			<button class="btn ml-4 bg-gray-200 hover:bg-gray-400 focus:ring-gray-400 order-now">Đặt hàng ngay</button>
+			<button class="btn bg-green-600 hover:bg-green-700 focus:ring-green-600" (click)="learnMore()">
+				Tìm hiểu thêm
+			</button>
+			<button class="btn ml-4 bg-gray-200 hover:bg-gray-300 focus:ring-gray-300 order-now" (click)="gotoStore()">
+				Đặt hàng ngay
+			</button>
 		</div>
 		<div class="img-box">
 			<img [src]="imageSource" alt="image">
 		</div>
 	</div>
 	<ul class="thumb">
-		<li (click)="changeImage('shell')"><img src="../../../../assets/shell.svg" alt="shell icon"></li>
-		<li (click)="changeImage('fruit')"><img src="../../../../assets/fruits.svg" alt="fruits icon"></li>
-		<li (click)="changeImage('flower')"><img src="../../../../assets/flower.svg" alt="flower icon"></li>
+		<li (click)="changeImage('shell')"><img src="../../../../assets/info1/shell.svg" alt="shell icon"></li>
+		<li (click)="changeImage('fruit')"><img src="../../../../assets/info1/fruits.svg" alt="fruits icon"></li>
+		<li (click)="changeImage('flower')"><img src="../../../../assets/info1/flower.svg" alt="flower icon"></li>
 	</ul>
-	<ul class="sci">
-		<li><a href=""><i class="fa fa-facebook"></i></a></li>
-		<li><a href=""><i class="fa fa-twitter"></i></a></li>
-		<li><a href=""><i class="fa fa-instagram"></i></a></li>
-	</ul>
+</div>
+<div id="nextInformation">
+	<div class="info-2">
+		<div class="container-info">
+			<img class="img" src="../../../../assets/info2/validation.svg" alt="flower icon">
+			<div class="title">Chứng nhận đảm bảo chất lượng</div>
+			<p class="description">
+				Cơ sở trang trại đạt chuẩn GlobalGAP - một trong những công cụ và tiêu chuẩn để hàng hóa có thể “thông hành” quốc tế.
+			</p>
+		</div>
+		<div class="container-info">
+			<img class="img" src="../../../../assets/info2/traceability.svg" alt="flower icon">
+			<div class="title">Đảm bảo nguồn gốc</div>
+			<p class="description">
+				Nguồn gốc cây giống có xuất xứ rõ ràng. Có thể truy xuất nguồn gốc sản phẩm thông qua ứng dụng.
+			</p>
+		</div>
+		<div class="container-info">
+			<img class="img" src="../../../../assets/info2/pill.svg" alt="flower icon">
+			<div class="title">Không sử dụng thuốc trừ sâu</div>
+			<p class="description">
+				Chỉ sử dụng các loại phân vi sinh hoặc phân hữu cơ. Không sử dụng các loại thuốc hóa học, trừ sâu.
+			</p>
+		</div>
+	</div>
 </div>
