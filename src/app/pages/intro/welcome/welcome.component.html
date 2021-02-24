@@ -1,3 +1,5 @@
+<img class="go-top" src="../../../../assets/carrot.svg" alt="go to top" (click)="scrollToTop()"
+	[class.hidden]="isHideScrollButton">
 <ul class="sci">
 	<li><a href=""><i class="fa fa-facebook"></i></a></li>
 	<li><a href=""><i class="fa fa-twitter"></i></a></li>
@@ -32,28 +34,80 @@
 		<li (click)="changeImage('flower')"><img src="../../../../assets/info1/flower.svg" alt="flower icon"></li>
 	</ul>
 </div>
-<div id="nextInformation">
-	<div class="info-2">
+<div class="info-2" id="nextInformation">
+	<div class="font-medium mb-5 text-center text-3xl title">
+		Dịch vụ của chúng tôi
+	</div>
+	<div class="info-2-1">
 		<div class="container-info">
-			<img class="img" src="../../../../assets/info2/validation.svg" alt="flower icon">
-			<div class="title">Chứng nhận đảm bảo chất lượng</div>
-			<p class="description">
-				Cơ sở trang trại đạt chuẩn GlobalGAP - một trong những công cụ và tiêu chuẩn để hàng hóa có thể “thông hành” quốc tế.
-			</p>
-		</div>
-		<div class="container-info">
-			<img class="img" src="../../../../assets/info2/traceability.svg" alt="flower icon">
-			<div class="title">Đảm bảo nguồn gốc</div>
-			<p class="description">
+			<img class="img-info" src="../../../../assets/info2/traceability.svg" alt="flower icon">
+			<div class="title-info">Đảm bảo nguồn gốc</div>
+			<p>
 				Nguồn gốc cây giống có xuất xứ rõ ràng. Có thể truy xuất nguồn gốc sản phẩm thông qua ứng dụng.
 			</p>
 		</div>
 		<div class="container-info">
-			<img class="img" src="../../../../assets/info2/pill.svg" alt="flower icon">
-			<div class="title">Không sử dụng thuốc trừ sâu</div>
-			<p class="description">
-				Chỉ sử dụng các loại phân vi sinh hoặc phân hữu cơ. Không sử dụng các loại thuốc hóa học, trừ sâu.
+			<img class="img-info truck" src="../../../../assets/info2/delivery-truck.svg" alt="flower icon">
+			<div class="title-info">Hỗ trợ giao hàng</div>
+			<p>
+				Vận chuyển sản phẩm với phương tiện hiện đại. Giao hàng miễn phí nếu khách hàng mua số lượng lớn.
 			</p>
+		</div>
+		<div class="container-info">
+			<img class="img-info" src="../../../../assets/info2/pill.svg" alt="flower icon">
+			<div class="title-info">Không thuốc trừ sâu</div>
+			<p>
+				Chỉ sử dụng các loại phân vi sinh và phân hữu cơ. Không sử dụng các loại thuốc hóa học, trừ sâu.
+			</p>
+		</div>
+	</div>
+	<div class="info-2-2">
+		<div class="container-info">
+			<img class="img-info" src="../../../../assets/info2/validation.svg" alt="flower icon">
+			<div class="title-info">Chứng nhận chất lượng</div>
+			<p>
+				Cơ sở trang trại đạt chuẩn GlobalGAP - một công cụ, tiêu chuẩn để hàng hóa có thể “thông hành” quốc
+				tế.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="info-3 py-16">
+	<div class="text-center mb-8 flex flex-col items-center">
+		<div class="text-3xl mb-2 title">
+			Đối tác
+		</div>
+		<div class="text-xl mx-40">
+			Tự tin là đối tác của các khách hàng lớn. Chúng tôi tự hào và sẽ luôn cố gắng để hoàn thiện sản phẩm cũng
+			như chất lượng dịch vụ của mình.
+		</div>
+	</div>
+	<div class="w-full">
+		<!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
+		<div class="overflow-hidden">
+
+			<!-- The slider itself is a flex grid -->
+			<div class="flex -mx-4 img-ticker">
+
+				<!-- Original set of images -->
+				<!-- Each image is a grid column with width 16rem (w-64) and horiztonal margin 1rem (mx-4) -->
+				<img src="../../../../assets/info3/bigclogo.png">
+				<img src="../../../../assets/info3/cj.png">
+				<img src="../../../../assets/info3/Logo_Co-opmart_2012.jpg">
+				<img src="../../../../assets/info3/lotte.jpg">
+				<img src="../../../../assets/info3/marter_card.png">
+				<img src="../../../../assets/info3/vinmart.jpg">
+				<img src="../../../../assets/info3/visa.png">
+
+				<!-- Copy set of images -->
+				<img src="../../../../assets/info3/bigclogo.png">
+				<img src="../../../../assets/info3/cj.png">
+				<img src="../../../../assets/info3/Logo_Co-opmart_2012.jpg">
+				<img src="../../../../assets/info3/lotte.jpg">
+				<img src="../../../../assets/info3/marter_card.png">
+				<img src="../../../../assets/info3/vinmart.jpg">
+				<img src="../../../../assets/info3/visa.png">
+			</div>
 		</div>
 	</div>
 </div>

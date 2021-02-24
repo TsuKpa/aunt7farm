@@ -26,11 +26,11 @@
 
 .info-1 {
 
-	@apply relative w-full mt-4 block;
-	height: 798px;
+	@apply relative w-full block;
+	height: 680px;
 
 	.content {
-		@apply relative w-full flex justify-between items-center p-24;
+		@apply relative w-full flex justify-between items-center px-24 pb-24;
 
 		.text-box {
 			@apply relative;
@@ -62,7 +62,7 @@
 		.img-box {
 			width: 600px;
 			height: 450px;
-			@apply flex justify-end pr-24 mt-12;
+			@apply flex justify-end mt-12;
 
 			img {
 				max-width: 340px;
@@ -95,29 +95,71 @@
 	}
 }
 
-#nextInformation {
-	width: 100%;
-	background-color: #f0ffff;
+@mixin title-color {
+	color: #017143;
+}
 
-	.info-2 {
-		@apply mx-24 mb-12 flex items-center text-center;
+.info-2 {
+	background-color: #fff;
+	@apply py-12;
 
-		.container-info {
-			@apply flex flex-col items-center p-12;
+	.title {
+		@include title-color;
+	}
 
-			.title {
-				@apply font-medium p-4;
-				font-size: 1.4rem;
-				color: #3b82f6;
-			}
+	.container-info {
+		@apply flex flex-col items-center m-4 text-center max-w-sm bg-gray-100 rounded-xl p-8 shadow-md;
 
-			.img {
-				width: 150px;
-			}
+		.img-info {
+			width: 150px;
+			height: 150px;
+		}
 
-			p {
-				color: slategray;
-			}
+		.truck {
+			width: 200px;
+		}
+
+		.title-info {
+			@apply font-medium px-4 py-3;
+			font-size: 1.4rem;
+			@include title-color;
+		}
+	}
+
+	.info-2-1 {
+		@apply mx-24 flex justify-center;
+	}
+
+	.info-2-2 {
+		@apply flex justify-center;
+	}
+}
+
+.go-top {
+	@apply fixed bottom-6 right-8 cursor-pointer h-12 w-12;
+	z-index: 2;
+}
+
+.info-3 {
+	.title {
+		@include title-color;
+	}
+
+	@keyframes ticker-kf {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(-108rem, 0, 0);
+		}
+	}
+
+	.img-ticker {
+		animation: ticker-kf 18s linear infinite;
+
+		img {
+			@apply w-72 h-64 bg-white mx-4 self-start flex-none shadow-md rounded-xl;
 		}
 	}
 }

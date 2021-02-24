@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import Utils from '@app/common/utils/utils';
 
@@ -9,9 +9,9 @@ import Utils from '@app/common/utils/utils';
 })
 export class WelcomeComponent {
     source = {
-        shell: '../../../../assets/shell.svg',
-        flower: '../../../../assets/pot-flower.svg',
-        fruit: '../../../../assets/fruits.svg'
+        shell: '../../../../assets/info1/shell.svg',
+        flower: '../../../../assets/info1/pot-flower.svg',
+        fruit: '../../../../assets/info1/fruits.svg'
     };
     color = {
         shell: '#9f5f80',
@@ -20,6 +20,7 @@ export class WelcomeComponent {
     };
     pathColor = this.color.fruit;
     imageSource = this.source.fruit;
+    isHideScrollButton = true;
 
     constructor(private router: Router) {}
 
@@ -34,5 +35,19 @@ export class WelcomeComponent {
 
     gotoStore(): void {
         void this.router.navigate(['store']);
+    }
+
+    scrollToTop(): void {
+        Utils.scrollToElement('top');
+    }
+
+    @HostListener('window:scroll', ['$event'])
+    onScroll(event: Event): void {
+        const value = (<HTMLDocument>event.target).body.scrollTop || 1;
+        if (value > 250) {
+            this.isHideScrollButton = false;
+        } else if (value < 50) {
+            this.isHideScrollButton = true;
+        }
     }
 }

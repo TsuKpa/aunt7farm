@@ -1,32 +1,36 @@
-<section>
+<div class="bg-yellow-50 w-full min-h-screen flex flex-col items-center" id="top">
 	<header>
-		<div class="flex items-center">
-			<a routerLink="/"><img src="../../../../assets/flower.svg" class="logo relative max-w" alt="logo"></a>
-			<ul class="relative flex ml-3">
-				<li><a routerLink="/welcome">TRANG CHỦ</a></li>
-				<li><a routerLink="/store">CỬA HÀNG</a></li>
-				<li><a routerLink="/about">VỀ CHÚNG TÔI</a></li>
-				<li><a routerLink="/contact">LIÊN HỆ</a></li>
-			</ul>
-		</div>
-		<div class="flex items-center">
-			<div class="relative cursor-pointer">
-				<img src="../../../../assets/shopping-cart.svg" class="h-8" alt="cart">
-				<div class="absolute rounded-full -top-4 -right-2 bg-yellow-400 p-1">
-					{{ amount }}
-				</div>
+		<div class="container-header">
+			<div class="flex items-center">
+				<a routerLink="/"><img src="../../../../assets/info1/flower.svg" class="logo relative max-w" alt="logo"></a>
+				<ul class="relative flex ml-3">
+					<li><a routerLink="/welcome">TRANG CHỦ</a></li>
+					<li><a routerLink="/store">CỬA HÀNG</a></li>
+					<li><a routerLink="/about">VỀ CHÚNG TÔI</a></li>
+					<li><a routerLink="/contact">LIÊN HỆ</a></li>
+				</ul>
 			</div>
-			<div class="flex ml-5 items-center">
-				<button class="hover:underline">ĐĂNG KÝ</button>
-				<span class="ml-3">/</span>
-				<button class="ml-3 hover:underline">ĐĂNG NHẬP</button>
+			<div class="flex items-center">
+				<div class="relative cursor-pointer">
+					<img src="../../../../assets/shopping-cart.svg" class="h-8" alt="cart">
+					<div class="absolute rounded-full -top-4 -right-2 bg-yellow-400 p-1">
+						{{ amount }}
+					</div>
+				</div>
+				<div class="flex ml-5 items-center">
+					<button class="hover:underline">ĐĂNG KÝ</button>
+					<span class="ml-3">/</span>
+					<button class="ml-3 hover:underline">ĐĂNG NHẬP</button>
+				</div>
 			</div>
 		</div>
 	</header>
-	<router-outlet></router-outlet>
-	<footer class="absolute left-0 bottom-0 w-full text-center p-4 bg-yellow-100">
+	<div class="w-full block">
+		<router-outlet></router-outlet>
+	</div>
+	<footer class="relative bottom-0 w-full text-center p-4 bg-yellow-100">
 		Design by <a href="https://tsukpa.netlify.app" target="_blank" class="no-underline">
 			TsuKpa
 		</a> with all my <div class="inline-block heart">❤</div>. Since 2020.
 	</footer>
-</section>
+</div>
