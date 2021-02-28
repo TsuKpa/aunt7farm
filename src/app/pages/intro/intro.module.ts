@@ -5,7 +5,6 @@ import { IntroRoutingModule } from './intro-routing.module';
 import { IntroComponent } from './intro.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { StoreComponent } from './store/store.component';
 
@@ -14,7 +13,6 @@ import { StoreComponent } from './store/store.component';
         IntroComponent,
         PageNotFoundComponent,
         WelcomeComponent,
-        AboutComponent,
         ContactComponent,
         StoreComponent
     ],

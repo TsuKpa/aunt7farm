@@ -2,11 +2,11 @@
 	<header>
 		<div class="container-header">
 			<div class="flex items-center">
-				<a routerLink="/"><img src="../../../../assets/info1/flower.svg" class="logo relative max-w" alt="logo"></a>
+				<a routerLink="/"><img src="../../../../assets/info1/flower.svg" class="logo relative max-w"
+						alt="logo"></a>
 				<ul class="relative flex ml-3">
 					<li><a routerLink="/welcome">TRANG CHỦ</a></li>
 					<li><a routerLink="/store">CỬA HÀNG</a></li>
-					<li><a routerLink="/about">VỀ CHÚNG TÔI</a></li>
 					<li><a routerLink="/contact">LIÊN HỆ</a></li>
 				</ul>
 			</div>
@@ -25,12 +25,54 @@
 			</div>
 		</div>
 	</header>
-	<div class="w-full block">
+	<div class="w-full block flex-1">
 		<router-outlet></router-outlet>
 	</div>
-	<footer class="relative bottom-0 w-full text-center p-4 bg-yellow-100">
-		Design by <a href="https://tsukpa.netlify.app" target="_blank" class="no-underline">
-			TsuKpa
-		</a> with all my <div class="inline-block heart">❤</div>. Since 2020.
+	<footer class="relative bottom-0 w-full bg-yellow-100">
+		<div class="mx-28 py-6 text-lg flex justify-between">
+			<div class="mr-4">
+				<div class="brand">
+					Trang Trại Cô 7
+				</div>
+				<p class="description">
+					Chuyên mua bán sỉ và lẻ các loại trái cây, hoa kiểng và ốc bưu đen.
+				</p>
+			</div>
+			<div class="mr-4 text-left w-48">
+				<div class="title">
+					Sản phẩm
+				</div>
+				<ul class="list-none">
+					<li class="hover:underline"><a href="">Trái cây</a></li>
+					<li class="hover:underline"><a href="">Hoa kiểng</a></li>
+					<li class="hover:underline"><a href="">Ốc</a></li>
+				</ul>
+			</div>
+			<div class="text-left">
+				<div class="title">
+					Liên hệ
+				</div>
+				<ul class="list-none">
+					<li>
+						<div class="w-20 font-semibold inline-block">Địa chỉ:</div>
+						32A/2 Ấp An Thạnh, xã An Bình, huyện Long Hồ, tỉnh Vĩnh Long.
+					</li>
+					<li>
+						<div class="w-20 font-semibold inline-block">SĐT:</div> (+84) 123 456 789
+					</li>
+					<li>
+						<div class="w-20 font-semibold inline-block">Email:</div> trangtraico7@gmail.com
+					</li>
+				</ul>
+			</div>
+		</div>
 	</footer>
+</div>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution="setup_tool" page_id="111126804356185" theme_color="#0A7CFF"
+	logged_in_greeting="Chào mừng bạn đến với trang trại cô 7, Chúng tôi có thể giúp gì cho bạn?"
+	logged_out_greeting="Chào mừng bạn đến với trang trại cô 7, Chúng tôi có thể giúp gì cho bạn?">
 </div>

@@ -52,7 +52,9 @@
             "styles": [
               "src/app/styles/style.scss"
             ],
-            "scripts": [],
+            "scripts": [
+				"src/facebook-chat.js"
+			],
             "customWebpackConfig": {
               "path": "webpack.config.js"
             }

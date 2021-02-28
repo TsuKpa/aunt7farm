@@ -35,11 +35,17 @@ header {
 }
 
 footer {
-	a {
-		color: #3b82f6;
+	.title {
+		@apply text-xl uppercase mb-3 border-b border-yellow-500;
+		color: #017143;
 	}
 
-	.heart {
-		color: #dc2626;
+	.brand {
+		@apply font-semibold text-3xl uppercase;
+		color: #017143;
+	}
+
+	li {
+		@apply py-1;
 	}
 }
