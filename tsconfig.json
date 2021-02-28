@@ -32,7 +32,6 @@
 	},
 	"angularCompilerOptions": {
 		"strictTemplates": true,
-		"fullTemplateTypeCheck": false,
 	},
 	"files": ["src/environments/environment.prod.ts"],
 	"include": [
